@@ -1,0 +1,30 @@
+<div style="text-align:center">
+  <h1>
+    angularx-qrcode sample implementation
+  </h1>
+</div>
+
+<qrcode [qrdata]="qrdata" [size]="256" [level]="'M'"></qrcode>
+
+<div class="text">
+  <label>
+    <input [(ngModel)]="qrdata" placeholder="name">
+  </label>
+  <br>
+  <button (click)="changeValue('Bruce')">Change Value to Bruce</button>
+  <button (click)="changeValue('Peter Parker')">Change Value to Peter Parker</button>
+</div>
+
+<h2>Here are some links to help you start with angularx-qrcode: </h2>
+
+<ul>
+  <li>
+    <h2><a target="_blank" rel="noopener" href="https://github.com/Cordobo/angularx-qrcode">Github</a></h2>
+  </li>
+  <li>
+    <h2><a target="_blank" rel="noopener" href="http://cordobo.com/2444-angular4-qrcode-generator-component/">Tutorial</a></h2>
+  </li>
+  <li>
+    <h2><a target="_blank" rel="noopener" href="https://www.npmjs.com/package/angularx-qrcode">NPM</a></h2>
+  </li>
+</ul>
