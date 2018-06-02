@@ -5,7 +5,6 @@ import { AppComponent } from './app.component';
 
 import { QRCodeModule } from 'angularx-qrcode';
 
-
 @NgModule({
   declarations: [
     AppComponent
