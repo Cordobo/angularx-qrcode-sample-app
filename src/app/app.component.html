@@ -1,18 +1,18 @@
-<div style="text-align:center">
-  <h1>
-    angularx-qrcode sample implementation
-  </h1>
-</div>
+<h1>angularx-qrcode demo implementation</h1>
 
 <qrcode [qrdata]="qrdata" [size]="256" [level]="'M'"></qrcode>
 
+<br>
+
 <div class="text">
   <label>
-    <input [(ngModel)]="qrdata" placeholder="name">
+    Type to change: <input [(ngModel)]="qrdata" placeholder="name">
   </label>
+  <br>
   <br>
   <button (click)="changeValue('Bruce')">Change Value to Bruce</button>
   <button (click)="changeValue('Peter Parker')">Change Value to Peter Parker</button>
+  <button (click)="changeValue('42')">Change Value to 42</button>
 </div>
 
 <h2>Here are some links to help you start with angularx-qrcode:</h2>
