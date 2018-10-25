@@ -1,5 +1,5 @@
 # angularx-qrcode sample app
-Angular6.1 demo app with a working implementation of angularx-qrcode.
+Angular7 demo app with a working implementation of angularx-qrcode.
 
 angularx-qrcode is an Angular4/5/6/6.1/7 QRCode generator Component library for QR Codes (Quick Response) with AOT support.
 
