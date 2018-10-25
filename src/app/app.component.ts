@@ -13,12 +13,12 @@ export class AppComponent {
 
   public qrdata: string = null;
 
-  constructor () {
+  constructor() {
     console.log('AppComponent running');
     this.qrdata = 'Initial QR code data string';
   }
 
-  changeValue( newValue: string): void {
+  changeValue(newValue: string): void {
     this.qrdata = newValue;
   }
 
