@@ -10,7 +10,7 @@ describe('workspace-project App', () => {
 
   it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('Welcome to angularx-qrcode-sample-app!');
+    expect(page.getTitleText()).toEqual('angularx-qrcode-sample-app app is running!');
   });
 
   afterEach(async () => {
