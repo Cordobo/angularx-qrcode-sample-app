@@ -1,38 +1,78 @@
 <h1>angularx-qrcode demo implementation</h1>
 
-<qrcode [qrdata]="qrdata" [width]="256" [level]="'M'"></qrcode>
+<qrcode
+  [qrdata]="qrdata"
+  [width]="256"
+  [level]="'M'"
+  [elementType]="elementType"
+  [scale]="scale"
+>
+  ></qrcode
+>
 <!-- <qr-code value="Yo world!" size="300" errorCorrectionLevel="M"></qr-code>
 <qr-code [value]="value" [size]="size" [errorCorrectionLevel]="errorCorrectionLevel"></qr-code> -->
 
-<br>
+<br />
 
 <div class="text">
   <label>
-    Type to change: <input [(ngModel)]="qrdata" placeholder="name">
+    Type to change: <input [(ngModel)]="qrdata" placeholder="name" />
   </label>
-  <br>
-  <br>
+  <br />
+  <br />
   <button (click)="changeValue('Bruce')">Change Value to Bruce</button>
-  <button (click)="changeValue('Peter Parker')">Change Value to Peter Parker</button>
+  <button (click)="changeValue('Peter Parker')">
+    Change Value to Peter Parker
+  </button>
   <button (click)="changeValue('42')">Change Value to 42</button>
+
+  <button (click)="changeElementType('img')">img</button>
+  <button (click)="changeElementType('url')">url</button>
+  <button (click)="changeElementType('canvas')">canvas</button>
+  <button (click)="changeElementType('svg')">svg</button>
 </div>
 
 <h2>Here are some links to get you started with angularx-qrcode:</h2>
 
 <ul>
   <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/Cordobo/angularx-qrcode">Github: angularx-qrcode</a>
+    <h2>
+      <a
+        target="_blank"
+        rel="noopener"
+        href="https://github.com/Cordobo/angularx-qrcode"
+        >Github: angularx-qrcode</a
+      >
     </h2>
   </li>
   <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/Cordobo/angularx-qrcode-sample-app">Github: this demo
-        app</a></h2>
+    <h2>
+      <a
+        target="_blank"
+        rel="noopener"
+        href="https://github.com/Cordobo/angularx-qrcode-sample-app"
+        >Github: this demo app</a
+      >
+    </h2>
   </li>
   <li>
-    <h2><a target="_blank" rel="noopener"
-        href="http://cordobo.com/2444-angular4-qrcode-generator-component/">Tutorial</a></h2>
+    <h2>
+      <a
+        target="_blank"
+        rel="noopener"
+        href="http://cordobo.com/2444-angular4-qrcode-generator-component/"
+        >Tutorial</a
+      >
+    </h2>
   </li>
   <li>
-    <h2><a target="_blank" rel="noopener" href="https://www.npmjs.com/package/angularx-qrcode">NPM</a></h2>
+    <h2>
+      <a
+        target="_blank"
+        rel="noopener"
+        href="https://www.npmjs.com/package/angularx-qrcode"
+        >NPM</a
+      >
+    </h2>
   </li>
 </ul>

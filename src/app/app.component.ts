@@ -1,30 +1,28 @@
-import { Component } from '@angular/core';
+import { Component } from "@angular/core";
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: "app-root",
+  templateUrl: "./app.component.html",
+  styleUrls: ["./app.component.css"],
 })
 export class AppComponent {
-  title = 'angularx-qrcode-sample-app';
+  title = "angularx-qrcode-sample-app";
 
   public qrdata: string = null;
+  public elementType: "img" | "url" | "canvas" | "svg" = null;
+  public scale: number = 1;
+
   constructor() {
-    console.log('AppComponent running');
-    this.qrdata = 'Initial QR code data string';
+    this.qrdata = "Initial QR code data string";
+    this.elementType = "img";
+    this.scale = 4;
   }
-
-  // value = "xxx"
-  // size = "300"
-  // errorCorrectionLevel = "M"
-  // errorCorrectionLevels = ["L", "M", "Q", "H"]
-
-  // get example() {
-  //   return `<qr-code value="${this.value}" size="${this.size}" errorCorrectionLevel="${this.errorCorrectionLevel}"></qr-code>`
-  // }
 
   changeValue(newValue: string): void {
     this.qrdata = newValue;
   }
 
+  changeElementType(newValue: "img" | "url" | "canvas" | "svg"): void {
+    this.elementType = newValue;
+  }
 }
